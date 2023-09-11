@@ -1,3 +1,6 @@
+/* Inica todas las configuraciones sin estilos */
 @tailwind base;
+/* acceder a todas las clases de tailwind */
 @tailwind components;
+/* acceder a todas las utilidades al proyecto */
 @tailwind utilities;
