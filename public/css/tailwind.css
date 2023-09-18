@@ -598,10 +598,6 @@ video {
   width: auto;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -630,6 +626,11 @@ video {
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 45 74 / var(--tw-bg-opacity));
 }
 
 .bg-red-300 {
