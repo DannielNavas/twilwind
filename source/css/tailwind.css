@@ -4,3 +4,7 @@
 @tailwind components;
 /* acceder a todas las utilidades al proyecto */
 @tailwind utilities;
+
+.card {
+    @apply w-48 h-64 shadow-lg rounded-lg flex-none
+}
