@@ -18,15 +18,19 @@
   <section class="w-full h-screen">
     <div id="home">
       <div class="w-full h-3/4">
-        <div class="w-full h-ful flex flex-col absolute space-y-96 py-4 items-center ">
+        <div class="w-full h-ful flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-32 lg:justify-start  ">
           <input type="search" name="" id=""
-            class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+            class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
             placeholder="San Francisco">
+
+            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6 ">
+              <p class="text-3xl ml-16 font-bold text-white">Encuentra más ubicaciones como esta</p>
+            </div>
           <button
-            class="w-48 rounded-full shadow-sm text-lg text-primary font-semibold p-4 bg-white transition transition-all duration-500 ease-in-ut hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110">Explorar</button>
+            class="w-48 rounded-full shadow-sm text-lg text-primary font-semibold p-4 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16 ">Explorar</button>
         </div>
-        <div class="w-full h-full">
-          <img src="./img/sanFrancisco.jpg" alt="sanfrancisco">
+        <div class="w-full h-full lg:h-96 bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+          <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="sanfrancisco">
         </div>
 
       </div>
@@ -58,14 +62,18 @@
           <p class="title">Chicago</p>
           <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
         </div>
-        <div class="w-full h-96 bg-red-200 bg-chicago bg-cover rounded-xl">
-          <p class="title">Chicago</p>
+        <div class="w-full h-96 bg-red-200 bg-LA bg-cover rounded-xl">
+          <p class="title">Los Angeles</p>
+          <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+        </div>
+        <div class="w-full h-96 bg-red-200 bg-miami bg-cover rounded-xl">
+          <p class="title">Miami</p>
           <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
         </div>
       </div>
     </div>
 
-    <div id="faqs" class="w-ful h-full">
+    <div id="faqs" class="w-ful h-full pt-8">
       <div class="w-full h-ful px-6 flex flex-col space-y-4">
         <p class="text-3xl text-primary font-semibold mt-4">Faqs</p>
         <div>
@@ -111,7 +119,7 @@
 
   </section>
 
-  <div id="tabBar" class="w-full h-16 bg-cyan-400 fixed left-0 bottom-0 shadow-md flex space-x-8 justify-center items-center">
+  <div id="tabBar" class="w-full h-16 bg-cyan-400 fixed left-0 bottom-0 shadow-md flex space-x-8 justify-center items-center lg:hidden">
     <a href="#home">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-5 h-5">
