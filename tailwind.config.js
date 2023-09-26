@@ -1,6 +1,6 @@
 module.exports = {
   content: ["./public/index.html", "./src/**/*.{html,js}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: {
@@ -32,7 +32,7 @@ module.exports = {
       },
       fontFamily: {
         Monserrat: ["Monserrat", "sans-serif"],
-      }
+      },
     },
   },
   variants: {
